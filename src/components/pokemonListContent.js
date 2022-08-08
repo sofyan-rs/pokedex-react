@@ -21,9 +21,9 @@ const PokemonListContent = ({ url }) => {
 						<span className='float-right inline-block text-gray-500 text-[14px] md:text-base pt-0.5'>#{pad(pokemon.id, 3)}</span>
 					</div>
 					<img src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
-					<div className="mt-10">
+					<div className="mt-6">
 						{pokemon.types.map((type) => (
-							<span className={'bg-' + type.type.name + ' capitalize text-white text-xs px-2 py-1 inline-block rounded mr-1.5'}>{type.type.name}</span>
+							<span className={'bg-' + type.type.name + ' capitalize text-white text-xs px-2 py-1 inline-block rounded mr-1.5'} key={type.type.name}>{type.type.name}</span>
 						))}
 					</div>
 				</Link>
