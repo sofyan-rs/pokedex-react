@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-bright-yellow{background:#fdd85d;}
+.bg-orange{background:#ff844f;}
+.bg-pinky-red{background:#f14b3d;}
+.bg-green{background:#60d394}
+.bg-light-gray{background:#f8f9fa}
+.bg-really-gray{background:#595f65}
+.bg-grass{background:#16c172}
+.bg-fire{background:#ef271b}
+.bg-water{background:#4361ee}
+.bg-poison{background:#6e44ff}
+.bg-bug{background:#059669}
+.bg-normal{background:#c18cba}
+.bg-fighting{background:#885629}
+.bg-flying{background:#8b9cad}
+.bg-ground{background:#885629}
+.bg-rock{background:#63320b}
+.bg-ghost{background:#9a54a1}
+.bg-steel{background:#73e2a7}
+.bg-electric{background:#ffbf00}
+.bg-psychic{background:#db00b6}
+.bg-ice{background:#4361ee}
+.bg-dragon{background:#2ec4b6}
+.bg-dark{background:#434649}
+.bg-fairy{background:#ee4268}
+.text-bright-yellow{color:#fdd85d}
+.text-orange{color:#ff844f}
