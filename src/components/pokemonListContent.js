@@ -1,5 +1,6 @@
 import useFetch from '../useFetch';
 import { Link } from 'react-router-dom';
+import SkeletonList from './skeleton/skeletonList';
 
 function pad(number, length) {
 	var str = '' + number;
@@ -15,14 +16,7 @@ const PokemonListContent = ({ url }) => {
     return (
 		<div className='bg-white drop-shadow-2xl p-4 rounded-lg'>
 			{loading && (
-				<div className='animate-pulse'>
-					<div className='grid grid-cols-3 gap-4'>
-						<div className='h-7 bg-gray-200 rounded col-span-2'></div>
-						<div className='h-7 bg-gray-200 rounded col-span-1'></div>
-					</div>
-					<div className='h-48 bg-gray-200 rounded my-4'></div>
-					<div className='w-16 h-6 bg-gray-200 rounded'></div>
-				</div>
+				<SkeletonList />
 			)}
 			{pokemon && (
 				<Link to={'/pokemon/' + pokemon.name}>
