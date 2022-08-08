@@ -1,5 +1,4 @@
 import HeaderSearch from '../components/headerSearch';
-import Footer from '../components/footer';
 
 const NotFound = () => {
     return (
@@ -12,7 +11,6 @@ const NotFound = () => {
                     <img classname='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10094.png" alt="Pika" />
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

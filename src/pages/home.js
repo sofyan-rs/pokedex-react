@@ -1,5 +1,4 @@
 import HeaderSearch from '../components/headerSearch';
-import Footer from '../components/footer';
 import PokemonList from '../components/pokemonList';
 import useFetch from '../useFetch';
 import { useParams, Link } from 'react-router-dom';
@@ -21,11 +20,9 @@ const Home = () => {
 	return (
 		<>
 			<HeaderSearch />
-			{loading && <p>Loading...</p>}
-			{error && <p>Error</p>}
-			{pokemonlist && <PokemonList pokemonlist={pokemonlist} />}
-			{pokemonlist && <Pagination currentPage={pages} total={totalPages} />}
-			<Footer />
+			{error && <div className='container mx-auto p-10'><p className='bg-white drop-shadow-2xl p-5 rounded font-semibold text-center'>Error Can't Fetch Data</p></div>}
+			{!error && !loading && pokemonlist && <PokemonList pokemonlist={pokemonlist} />}
+			{!error && !loading && pokemonlist && <Pagination currentPage={pages} total={totalPages} />}
 		</>
 	);
 }
