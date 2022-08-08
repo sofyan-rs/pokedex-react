@@ -25,7 +25,7 @@ const PokemonMoves = () => {
                         </div>
                     </header>
                     <div className='container mx-auto mb-12'>
-                        <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 text-center text-sm m-5 mt-10'>
+                        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 text-center text-sm m-5 mt-10'>
                             {pokemonDetails && pokemonDetails.moves && pokemonDetails.moves.map(move => (
                                 <PokemonMove url={move.move.url} key={move.move.name} />
                             ))}

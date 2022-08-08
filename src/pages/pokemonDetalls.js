@@ -90,7 +90,7 @@ const PokemonDetails = () => {
                             <div className='bg-white drop-shadow-2xl p-7 rounded-lg m-5 mb-10'>
                                 <h2 className='text-2xl inline-block'>Moves</h2>
                                 <Link to={'moves'} className='inline-block text-sm bg-gray-900 px-7 py-2 rounded-full text-white float-right'>See all</Link>
-                                <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 text-center text-sm mt-8'>
+                                <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 text-center text-sm mt-8'>
                                     {(() => {
                                         const moves = [];
                                         if ((pokemonDetails.moves.length > 0) && (pokemonDetails.moves.length <= 6 )) {
