@@ -1,7 +1,7 @@
 import useFetch from "../useFetch";
 
-const PokemonMove = ({move, url}) => {
-    const { data: moves, loading, error } = useFetch(url);
+const PokemonMove = ({url}) => {
+    const { data: moves } = useFetch(url);
 
     return (
         <>

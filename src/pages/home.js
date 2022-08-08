@@ -1,7 +1,7 @@
 import HeaderSearch from '../components/headerSearch';
 import PokemonList from '../components/pokemonList';
 import useFetch from '../useFetch';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Pagination from '../components/pagination';
 
 const Home = () => {
