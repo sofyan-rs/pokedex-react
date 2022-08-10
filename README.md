@@ -1,6 +1,6 @@
-# Simple Pokedex App using React.JS
+# Simple Pokedex App using React.js
 
-This project was created with react.js and tailwindcss.
+This project was created with React.js and TailwindCSS.
 
 url : https://pokedex-kdevz.netlify.app/
 
